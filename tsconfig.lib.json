@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.lib.tsbuildinfo",
+    "outDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": false,
+    "noEmit": false
+  },
+  "include": [
+    "src/components/**/*",
+    "src/index.ts",
+    "src/types/**/*"
+  ],
+  "exclude": [
+    "src/demo",
+    "**/*.stories.*",
+    "**/*.test.*"
+  ]
+}
